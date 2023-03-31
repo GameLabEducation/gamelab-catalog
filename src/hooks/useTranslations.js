@@ -26,7 +26,7 @@ export function useTranslation () {
         const text = trans[key][lang]
         return text
       } catch (e) {
-        return defaultText || ''
+        return defaultText || key
       }
     },
     lang,

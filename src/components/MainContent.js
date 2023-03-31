@@ -2,14 +2,14 @@ import { useTranslation } from '@/hooks/useTranslations'
 import GameCard from './GameCard'
 import HelpCard from './HelpCard'
 
-const games = [
-  { title: 'Sodapop Game', transKey: 'sodapopDescription', gameSiteUrl: 'https://sp-beta.gamelab.cl', imageUrl: '/images/sodapop.png' },
-  { title: 'Winegame  ', transKey: 'wineGameDescription', gameSiteUrl: 'https://wine-beta.gamelab.cl', imageUrl: '/images/winegame.png' },
-  { title: 'Startup Journey Game', transKey: 'sjgDescription', gameSiteUrl: 'https://sjg-beta.gamelab.cl', imageUrl: '/images/sjg.png' },
-  { title: 'Warehouse Game', transKey: 'warehouseDescription', gameSiteUrl: 'https://wg-beta.gamelab.cl', imageUrl: '/images/warehouse.png' },
-  { title: 'Negotiation Game', transKey: 'negotiationDescription', gameSiteUrl: 'https://ng-beta.gamelab.cl', imageUrl: '/images/negotiation.png' },
-  { title: 'Pricingame', transKey: 'pricinDescription', gameSiteUrl: 'https://pg-beta.gamelab.cl', imageUrl: '/images/pricin.png' },
-  { title: 'Balanced Scorecard Game', transKey: 'balancedDescription', gameSiteUrl: 'https://bsc-beta.gamelab.cl', imageUrl: '/images/balanced.png' }
+export const games = [
+  { title: 'Sodapop Game', transKey: 'sodapopDescription', webInfoUrl: 'https://gamelabeducation.com/gestion-de-operaciones/', gameSiteUrl: 'https://sp-beta.gamelab.cl', imageUrl: '/images/sodapop.png' },
+  { title: 'Winegame  ', transKey: 'wineGameDescription', webInfoUrl: 'https://gamelabeducation.com/winegame-espanol/', gameSiteUrl: 'https://wine-beta.gamelab.cl', imageUrl: '/images/winegame.png' },
+  { title: 'Startup Journey Game', transKey: 'sjgDescription', webInfoUrl: 'https://gamelabeducation.com/startup-journey-game-es/', gameSiteUrl: 'https://sjg-beta.gamelab.cl', imageUrl: '/images/sjg.png' },
+  { title: 'Warehouse Game', transKey: 'warehouseDescription', webInfoUrl: 'https://gamelabeducation.com/warehouse-game-2/', gameSiteUrl: 'https://wg-beta.gamelab.cl', imageUrl: '/images/warehouse.png' },
+  { title: 'Negotiation Game', transKey: 'negotiationDescription', webInfoUrl: 'https://gamelabeducation.com/negotiation-game-2/', gameSiteUrl: 'https://ng-beta.gamelab.cl', imageUrl: '/images/negotiation.png' },
+  { title: 'Pricingame', transKey: 'pricinDescription', webInfoUrl: 'https://gamelabeducation.com/pricing-game-2/', gameSiteUrl: 'https://pg-beta.gamelab.cl', imageUrl: '/images/pricin.png' },
+  { title: 'Balanced Scorecard Game', transKey: 'balancedDescription', webInfoUrl: 'https://gamelabeducation.com/balanced-scorecard-game-2/', gameSiteUrl: 'https://bsc-beta.gamelab.cl', imageUrl: '/images/balanced.png' }
 ]
 
 export default function ({ searchString }) {

@@ -58,6 +58,38 @@ const trans = {
   balancedDescription: {
     en: 'The simulation is developed in the context of a case study called "neXstore", planning and executing a new strategy in a convenience store chain.',
     es: 'La simulación se desarrolla bajo el contexto del caso de estudio llamado “neXstore” planiﬁcando y ejecutando una nueva estrategia en una cadena de tiendas de conveniencia.'
+  },
+  soponsors: {
+    en: 'Sponsors',
+    es: 'Patrocinadores'
+  },
+  clients: {
+    en: 'Clients',
+    es: 'Clientes'
+  },
+  privacyPolicy: {
+    en: 'Privacy Policy',
+    es: 'Política de privacidad'
+  },
+  partOf: {
+    en: 'Part of',
+    es: 'Parte de'
+  },
+  simulators: {
+    en: 'Simulators',
+    es: 'Simuladores'
+  },
+  news: {
+    en: 'News',
+    es: 'Noticias'
+  },
+  aboutGamelab: {
+    en: 'About GameLab',
+    es: 'Sobre GameLab'
+  },
+  rightsReserved: {
+    en: 'All rights reserved',
+    es: 'Todos los derechos reservados'
   }
 }
 

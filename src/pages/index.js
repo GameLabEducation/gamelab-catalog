@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Header from '@/components/Header'
 import MainContent from '@/components/MainContent'
 import Head from 'next/head'
+import Footer from '@/components/Footer'
 
 export default function Home () {
   const [searchString, setSearchString] = useState('')
-  console.log('s')
   return (
     <>
       <Head>
@@ -16,6 +16,7 @@ export default function Home () {
       </Head>
       <Header setSearchString={setSearchString} />
       <MainContent searchString={searchString} />
+      <Footer />
     </>
   )
 }

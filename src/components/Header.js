@@ -9,7 +9,13 @@ export default function ({ setSearchString }) {
   return (
     <header className='h-[112px] flex items-center px-10' style={headerStyles}>
       <Image src='/images/gamelab-header-logo.png' width='100' height='100' />
-      <SearchInput setSearchString={setSearchString} style={{ marginLeft: 'auto' }} />
+      <div className='ml-auto flex flex-col justify-end gap-1'>
+        <div className='flex justify-between items-center'>
+          <a href='https://gamelabeducation.com/en/contact/' className='text-end text-white hover:underline uppercase font-bold' target='_blank' rel='noreferrer'>Contact us</a>
+          <button className='p-2' onClick={() => console.log('change lang')}>🇪🇸</button>
+        </div>
+        <SearchInput setSearchString={setSearchString} />
+      </div>
     </header>
   )
 }

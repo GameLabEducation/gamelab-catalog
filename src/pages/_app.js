@@ -1,3 +1,4 @@
+import { TransContextProvider } from '@/hooks/useTranslations'
 import '@/styles/globals.css'
 import { Lato } from 'next/font/google'
 
@@ -8,8 +9,10 @@ const inter = Lato({
 
 export default function App ({ Component, pageProps }) {
   return (
-    <main className={inter.className}>
-      <Component {...pageProps} />
-    </main>
+    <TransContextProvider>
+      <main className={inter.className}>
+        <Component {...pageProps} />
+      </main>
+    </TransContextProvider>
   )
 }

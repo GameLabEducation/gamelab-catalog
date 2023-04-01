@@ -3,6 +3,10 @@ import Image from 'next/image'
 import FooterHR from './FooterHR'
 import { games } from './MainContent'
 import Aacsb from './svg/Aacsb'
+import gamelabWideLogo from '../../public/images/gamelab-wide-logo.png'
+import corfoLogo from '../../public/images/corfo.png'
+import chileLogo from '../../public/images/chile.jpg'
+import chyrsalisLogo from '../../public/images/chyrsalis.png'
 
 export default function () {
   const { t } = useTranslation()
@@ -10,7 +14,7 @@ export default function () {
   return (
     <footer className='bg-[#0362DD] py-16 px-3 text-white flex flex-wrap justify-center gap-x-[130px] gap-y-7'>
       <div>
-        <Image className='mb-3' src='/images/gamelab-wide-logo.png' width='242' height='35' alt='Gamelab wide logo' />
+        <Image className='mb-3' src={gamelabWideLogo} width='242' height='35' alt='Gamelab wide logo' />
         <div className='flex justify-center my-5 gap-x-8'>
           <a href='https://www.facebook.com/GameLabEducation/' target='_blank' rel='noreferrer'>FB</a>
           <a href='http://www.instagram.com/gamelabeducation/' target='_blank' rel='noreferrer'>IG</a>
@@ -20,10 +24,10 @@ export default function () {
         <FooterHR />
         <p className='text-lg'>{t('soponsors')}</p>
         <div className='flex justify-around my-4'>
-          <Image src='/images/corfo.png' width='67' height='34' alt='Corfo logo' />
-          <Image src='/images/chile.jpg' width='38' height='38' alt='Chile logo' />
+          <Image src={corfoLogo} width='67' height='34' alt='Corfo logo' />
+          <Image src={chileLogo} width='38' height='38' alt='Chile logo' />
         </div>
-        <Image className='mx-auto' src='/images/chyrsalis.png' width='124' height='62' alt='Chyrsalis logo' />
+        <Image className='mx-auto' src={chyrsalisLogo} width='124' height='62' alt='Chyrsalis logo' />
       </div>
 
       <div>
